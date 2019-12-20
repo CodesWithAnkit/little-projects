@@ -1,0 +1,43 @@
+body {
+  background-color: bisque;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  animation: pusle 10s infinite;
+  background-color: rgba(52, 197, 112, 0.9);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+@keyframes pusle {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 100px rgba(255, 82, 82, 0.507);
+  }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 100px rgba(255, 82, 82, 0.363);
+  }
+  /* 70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 100px rgba(255, 82, 82, 0.527);
+  }
+  30% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 100px rgba(255, 82, 82, 0.596);
+  }
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 100px rgba(255, 82, 82, 0.705);
+  } */
+}
