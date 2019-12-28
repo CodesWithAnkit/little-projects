@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: wheat;
+  font-size: 4rem;
+  text-align: center;
+  /* Centering the text without flexbox */
+  line-height: 100vh;
+}
+
+span {
+  opacity: 0.5;
+  color: blueviolet;
+  transition: all 0.4s ease;
+  /* display: inline-block;
+  transform: translateY(50px); */
+}
+
+span.fade {
+  opacity: 1;
+  color: aqua;
+  /* transform: translateY(0px); */
+}
