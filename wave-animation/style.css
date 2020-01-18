@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: rgb(26, 86, 197);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.circle {
+  background-color: #fff;
+  height: 14px;
+  width: 14px;
+  margin: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+
+.circle.grow {
+  transform: scale(2);
+}
