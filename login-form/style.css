@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-wrap {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  flex: 1 1 66.66%;
+  background-image: linear-gradient(to bottom right, #cc2e5d, #ff5858);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-panel .illustration {
+  margin-bottom: 20px;
+}
+
+.left-panel h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.right-panel {
+  flex: 1 1 33.33%;
+  padding: 25px;
+}
+
+.right-panel h1 {
+  color: #ff5858;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.right-panel h1 strong {
+  color: #cc2e5d;
+  font-weight: 900;
+}
+
+.animated-form h3 {
+  color: #666666;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+
+.form-group.flex-end {
+  justify-content: flex-end;
+}
+
+.animated-form .form-group {
+  position: relative;
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.animated-form .form-group label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  font-size: 20px;
+  color: #aaa;
+  transform: translateY(-50%);
+  transition: 0.4s ease-out;
+}
+
+.animated-form .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #aaaaaa;
+  color: #666;
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+
+.animated-form .form-group:focus-within label {
+  color: #ff5858;
+  top: 0;
+  transform: translateY(-100%);
+}
+
+.animated-form .form-group:focus-within input {
+  border-color: #ff5858;
+}
+
+.animated-form .form-group .flex-end {
+  margin-bottom: 25px;
+}
+
+.animated-form .form-group .button {
+  display: block;
+  width: auto;
+  padding: 15px 50px;
+  color: #ff5858;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    #cc235d 50%,
+    #ff5858
+  );
+  background-size: 200%;
+  border: 3px solid #ff5858;
+  border-radius: 50px;
+}
+
+.animated-form .form-group .button:hover {
+  color: white;
+  border: 3px solid #fff;
+  background-position: 100%;
+}
+
+.animated-form .lost-password a {
+  color: #ff5858;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+}
+
+.animated-form .lost-password a:hover {
+  border-bottom-color: #ff5858;
+}
