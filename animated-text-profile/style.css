@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-wrapper {
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.swipe-in-text {
+  position: relative;
+}
+
+.swipe-in-text::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 100%;
+  width: 0;
+  z-index: 1;
+  background: #ff5858;
+  -webkit-animation: swipe-in-text 1s ease-out 1s forwards;
+          animation: swipe-in-text 1s ease-out 1s forwards;
+}
+
+.swipe-in-text .text {
+  color: #fff;
+  font-weight: 900;
+  font-size: 72px;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-animation: fade-in 0.01s linear 1.5s forwards;
+          animation: fade-in 0.01s linear 1.5s forwards;
+}
+
+.swipe-in-text .text.small {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.swipe-in-text.white::after {
+  background-color: #fff;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.swipe-in-text.white .text {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes swipe-in-text {
+  0% {
+    right: 100%;
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+    right: 0%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+@keyframes swipe-in-text {
+  0% {
+    right: 100%;
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+    right: 0%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
